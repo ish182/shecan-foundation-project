@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Register</title>
+
+    <link rel="stylesheet"
+          href="/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<div id="toast"></div>
+<div class="container">
+
+    <h1>Create Account</h1>
+
+    <form id="registerForm">
+
+        <div class="input-group">
+            <i class="fa-solid fa-user"></i>
+
+            <input type="text"
+                   id="name"
+                   placeholder="Enter Name"
+                   required>
+        </div>
+
+        <div class="input-group">
+            <i class="fa-solid fa-envelope"></i>
+
+            <input type="email"
+                   id="email"
+                   placeholder="Enter Email"
+                   required>
+        </div>
+
+        <div class="input-group">
+            <i class="fa-solid fa-lock"></i>
+
+            <input type="password"
+                   id="password"
+                   placeholder="Enter Password"
+                   required>
+        </div>
+
+        <div class="input-group">
+
+            <i class="fa-solid fa-user-tag"></i>
+
+            <select id="role">
+
+                <option value="USER">
+                    User
+                </option>
+
+                <option value="ADMIN">
+                    Admin
+                </option>
+
+            </select>
+
+        </div>
+
+        <button type="submit">
+            Register
+        </button>
+
+    </form>
+
+    <p id="message"></p>
+
+    <a href="/login">
+        Already have an account?
+    </a>
+
+</div>
+
+<script src="/js/script.js"></script>
+
+</body>
+</html>
